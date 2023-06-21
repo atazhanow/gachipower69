@@ -1,0 +1,26 @@
+create table Goods (
+  ProductId int identitity (1,1) not null,
+  Category int not null,
+  ProductName varchar (100) not null,
+  ProductDescription varchar (100) null,
+  Price money null,
+  OrderDate datetime null
+  );
+  
+insert into Goods (Category, ProductName, ProductDescription, Price, OrderDate)
+values (1, 'System unit', null,50, '01.12.2019 08:20:30'),
+       (1, 'Keyboard', 'To repair', 30, '10.01.2020 09:00:00'),
+       (1, 'Monitor', null, 100, '05.02.2020 13:20:55'),
+       (2, 'Ipad', null, 150, '15.03.2020 20:18:20'),
+       (2, 'Smartphone', 'In good condition', 100, '24.04.2020 11:30:45'),
+       ('123456789', null, 300, '18.05.2020 18:23:32');
+   
+ create table Categories (
+   CategoryId int identitity (1,1) not null,
+   CategoryName varchar (100) not nul
+   );
+   
+ insert into Categories 
+   values ('Computer components'),
+          ('Mobile devices');
+       
