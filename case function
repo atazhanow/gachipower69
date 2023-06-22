@@ -1,0 +1,14 @@
+select ProductId, Price,
+          case when Price > 100 THEN 'More 100'
+            when Price = 100 THEN 'Equals 100'
+            when Price < 100 THEN 'Less 100'
+            when Price = 50 AND ProductId = 1 THEN 'Price equals 50 и Id equals 1'
+            else 'No suitable condition'
+       end as Result
+from Goods;
+
+select trim (ProductName) as Productname,
+case when lower (ProductName) like '%a%' then 'yes'
+else 'no'
+end as result
+from Goods;
