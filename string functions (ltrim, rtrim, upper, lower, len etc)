@@ -1,0 +1,27 @@
+select ProductName as [Initial value],
+       ltrim(ProductName) as [ltrim],
+       rtrim(ProductName) as [rtrim],
+       rtrim(ltrim(ProductName)) as [rtrim and ltrim],
+       trim(ProductName) as [trim]
+from Goods;
+
+select ProductName as [Initial value],
+       lower (ProductName) as [lower],
+       upper(ProductName) as [upper]
+from Goods;
+
+select ProductName as [Initial value],
+       len(ProductName) as [len],
+       len(ltrim(ProductName)) as [ltrim and len]
+from Goods;
+
+select ProductName as [Initial value],
+       left(ProductName, 3) as [left],
+       right(ProductName, 3) as [right],
+       left(ltrim(ProductName), 3) as [left and ltrim],
+       right(rtrim(ProductName), 3) as [right and rtrim]
+from Goods;
+
+select ProductName as [Initial value],
+       substrig(ProductName, 3, 5) as [substring]
+from Goods;
