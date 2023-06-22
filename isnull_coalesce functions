@@ -1,0 +1,9 @@
+select ProductDescription as [Initial value],
+       isnull(ProductDescription, 'without description') as [isnull]
+from Goods;
+
+select trim (ProductName) as ProductName,
+       ProductDescription as [Initial value],
+       isnull (ProductDescription, 'without description') as [isnull],
+       coalesce(ProductDescription, ProductName, 'without description') as [coalesce]
+from Goods;
