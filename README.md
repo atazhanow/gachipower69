@@ -7,7 +7,7 @@
 
 - 🤝 I’m looking for help with [https://github.com/gachipower69/TEST2](https://github.com/gachipower69/TEST2)
 
-- 📝 I regularly write articles on [my Instagram (link in bio)](my Instagram (link in bio))
+- 📝 I regularly write articles on [my Instagram (link in bio)]
 
 - 💬 Ask me about **T-SQL, database, Python**
 
